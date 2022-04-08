@@ -1,0 +1,16 @@
+[
+    {
+        "action": "Unapprove",
+        "user": "admin scorpio",
+        "role": "USER_MANAGEMENT_ROLE",
+        "approval": "Final",
+        "dateTime": "1/23/2020 7:43:34 AM"
+    },
+    {
+        "action": "Approve",
+        "user": "admin scorpio",
+        "role": "USER_MANAGEMENT_ROLE",
+        "approval": "Final",
+        "dateTime": "1/23/2020 7:44:03 AM"
+    }
+]

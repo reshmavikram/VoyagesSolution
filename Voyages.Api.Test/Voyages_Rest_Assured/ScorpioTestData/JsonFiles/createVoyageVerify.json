@@ -1,0 +1,19 @@
+{
+    "sfpM_VoyagesId": 171,
+    "voyageNumber": 46,
+    "vesselCode": null,
+    "description": null,
+    "loadCondition": null,
+    "departurePort": "Vaoyagfesss03",
+    "departureTimezone": "Vasoyages0010",
+    "arrivalPort": null,
+    "arrivalTimezone": null,
+    "actualStartOfSeaPassage": "2020-01-14T07:41:36.154Z",
+    "actualEndOfSeaPassage": "2020-01-14T07:41:36.154Z",
+    "createdBy": 0,
+    "createdDateTime": "2020-02-06T06:08:08.2934241Z",
+    "modifiedBy": 0,
+    "modifiedDateTime": "2020-02-06T06:08:08.2934241Z",
+    "status": "ACTIVE",
+    "imoNumber": "123033"
+}

@@ -1,0 +1,274 @@
+<html>
+<head>
+<title>TestNG:  Term</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Term</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>39/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jan 09 17:50:12 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>54 seconds (54567 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Tests.Term.copyPassageTermVerify()'><b>copyPassageTermVerify</b><br>Test class: com.Tests.Term<br>Test method: copy passage term<br>Parameters: public void com.Tests.Term.copyPassageTermVerify(java.lang.reflect.Method) throws java.lang.Throwable</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.copyPoolTermDuplicateValueVerify()'><b>copyPoolTermDuplicateValueVerify</b><br>Test class: com.Tests.Term<br>Test method: check duplicate copy of pool term<br>Parameters: public void com.Tests.Term.copyPoolTermDuplicateValueVerify(java.lang.reflect.Method) throws java.lang.Throwable</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.copyPoolTermVerify()'><b>copyPoolTermVerify</b><br>Test class: com.Tests.Term<br>Test method: check copy pool term<br>Parameters: public void com.Tests.Term.copyPoolTermVerify(java.lang.reflect.Method) throws java.lang.Throwable</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.createPassageTermDuplicateValueVerify()'><b>createPassageTermDuplicateValueVerify</b><br>Test class: com.Tests.Term<br>Test method: check duplicate entry<br>Parameters: public void com.Tests.Term.createPassageTermDuplicateValueVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.createPassageTermVerify()'><b>createPassageTermVerify</b><br>Test class: com.Tests.Term<br>Test method: create passgae term<br>Parameters: public void com.Tests.Term.createPassageTermVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>1</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.createPoolTermDuplicateValueVerify()'><b>createPoolTermDuplicateValueVerify</b><br>Test class: com.Tests.Term<br>Test method: check duplicate passgae term<br>Parameters: public void com.Tests.Term.createPoolTermDuplicateValueVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>1</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.createPoolTermVerify()'><b>createPoolTermVerify</b><br>Test class: com.Tests.Term<br>Test method: create pool term<br>Parameters: public void com.Tests.Term.createPoolTermVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getAllDraftHeightUnitsVerify()'><b>getAllDraftHeightUnitsVerify</b><br>Test class: com.Tests.Term<br>Test method: get all draft hight units<br>Parameters: public void com.Tests.Term.getAllDraftHeightUnitsVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getAllPassageTermsFalseVerify()'><b>getAllPassageTermsFalseVerify</b><br>Test class: com.Tests.Term<br>Test method: Get all active pool term<br>Parameters: public void com.Tests.Term.getAllPassageTermsFalseVerify(java.lang.reflect.Method) throws java.lang.Throwable</td>
+<td></td>
+<td>1</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getAllPassageTermsTrueVerify()'><b>getAllPassageTermsTrueVerify</b><br>Test class: com.Tests.Term<br>Test method: Get all passage term list<br>Parameters: public void com.Tests.Term.getAllPassageTermsTrueVerify(java.lang.reflect.Method) throws java.lang.Throwable</td>
+<td></td>
+<td>1</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getAllPoolTermsFalseVerify()'><b>getAllPoolTermsFalseVerify</b><br>Test class: com.Tests.Term<br>Test method: Get all active pool term<br>Parameters: public void com.Tests.Term.getAllPoolTermsFalseVerify(java.lang.reflect.Method) throws java.lang.Throwable</td>
+<td></td>
+<td>1</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getAllPoolTermsTrueVerify()'><b>getAllPoolTermsTrueVerify</b><br>Test class: com.Tests.Term<br>Test method: Get all pool term<br>Parameters: public void com.Tests.Term.getAllPoolTermsTrueVerify(java.lang.reflect.Method) throws java.lang.Throwable</td>
+<td></td>
+<td>1</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getAllVesselDetailByTypeVerify()'><b>getAllVesselDetailByTypeVerify</b><br>Test class: com.Tests.Term<br>Test method: check vessel details by type id<br>Parameters: public void com.Tests.Term.getAllVesselDetailByTypeVerify(java.lang.reflect.Method) throws java.lang.Throwable</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getPassageTermByIdVerify()'><b>getPassageTermByIdVerify</b><br>Test class: com.Tests.Term<br>Test method: Get  passage term by id<br>Parameters: public void com.Tests.Term.getPassageTermByIdVerify(java.lang.reflect.Method) throws java.lang.Throwable</td>
+<td></td>
+<td>3</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getPoolTermByIdVerify()'><b>getPoolTermByIdVerify</b><br>Test class: com.Tests.Term<br>Test method: check pool term by id<br>Parameters: public void com.Tests.Term.getPoolTermByIdVerify(java.lang.reflect.Method) throws java.lang.Throwable</td>
+<td></td>
+<td>2</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getTermAssignToVerify()'><b>getTermAssignToVerify</b><br>Test class: com.Tests.Term<br>Test method: check term assign to passage<br>Parameters: public void com.Tests.Term.getTermAssignToVerify(java.lang.reflect.Method) throws java.lang.Throwable</td>
+<td></td>
+<td>1</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getallbaddayhoursVerify()'><b>getallbaddayhoursVerify</b><br>Test class: com.Tests.Term<br>Test method: get all baddayhours<br>Parameters: public void com.Tests.Term.getallbaddayhoursVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getallcurrentfactorVerify()'><b>getallcurrentfactorVerify</b><br>Test class: com.Tests.Term<br>Test method: get all currentfactor<br>Parameters: public void com.Tests.Term.getallcurrentfactorVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getalldraftlimitVerify()'><b>getalldraftlimitVerify</b><br>Test class: com.Tests.Term<br>Test method: get all draftlimit<br>Parameters: public void com.Tests.Term.getalldraftlimitVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getallevaluationtypeVerify()'><b>getallevaluationtypeVerify</b><br>Test class: com.Tests.Term<br>Test method: get all evaluationtype<br>Parameters: public void com.Tests.Term.getallevaluationtypeVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getallfuelconsumedVerify()'><b>getallfuelconsumedVerify</b><br>Test class: com.Tests.Term<br>Test method: get all fuelconsumed<br>Parameters: public void com.Tests.Term.getallfuelconsumedVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getallfuelunitsVerify()'><b>getallfuelunitsVerify</b><br>Test class: com.Tests.Term<br>Test method: get all fuelunits<br>Parameters: public void com.Tests.Term.getallfuelunitsVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>1</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getallloadconditionVerify()'><b>getallloadconditionVerify</b><br>Test class: com.Tests.Term<br>Test method: get all oadcondition<br>Parameters: public void com.Tests.Term.getallloadconditionVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getallpassagehoursVerify()'><b>getallpassagehoursVerify</b><br>Test class: com.Tests.Term<br>Test method: get all passagehours<br>Parameters: public void com.Tests.Term.getallpassagehoursVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getallspeedVerify()'><b>getallspeedVerify</b><br>Test class: com.Tests.Term<br>Test method: get all speed<br>Parameters: public void com.Tests.Term.getallspeedVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getallspeedconsideredVerify()'><b>getallspeedconsideredVerify</b><br>Test class: com.Tests.Term<br>Test method: get all speedconsidered<br>Parameters: public void com.Tests.Term.getallspeedconsideredVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getalltermsVerify()'><b>getalltermsVerify</b><br>Test class: com.Tests.Term<br>Test method: get all term<br>Parameters: public void com.Tests.Term.getalltermsVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>3</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getallvesseltypeVerify()'><b>getallvesseltypeVerify</b><br>Test class: com.Tests.Term<br>Test method: get all vesseltype<br>Parameters: public void com.Tests.Term.getallvesseltypeVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getallwaveheightunitsVerify()'><b>getallwaveheightunitsVerify</b><br>Test class: com.Tests.Term<br>Test method: get all waveheightunits<br>Parameters: public void com.Tests.Term.getallwaveheightunitsVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getallweathersourceVerify()'><b>getallweathersourceVerify</b><br>Test class: com.Tests.Term<br>Test method: get all weathersource<br>Parameters: public void com.Tests.Term.getallweathersourceVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.getallwindspeedunitsVerify()'><b>getallwindspeedunitsVerify</b><br>Test class: com.Tests.Term<br>Test method: get all windspeedunits<br>Parameters: public void com.Tests.Term.getallwindspeedunitsVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.updatePassageTermDuplicateValueVerify()'><b>updatePassageTermDuplicateValueVerify</b><br>Test class: com.Tests.Term<br>Test method: update passage term with duplicate data<br>Parameters: public void com.Tests.Term.updatePassageTermDuplicateValueVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.updatePassageTermStatusFalseVerify()'><b>updatePassageTermStatusFalseVerify</b><br>Test class: com.Tests.Term<br>Test method:  check active to inactive user<br>Parameters: public void com.Tests.Term.updatePassageTermStatusFalseVerify(java.lang.reflect.Method) throws java.lang.Throwable</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.updatePassageTermStatusTrueVerify()'><b>updatePassageTermStatusTrueVerify</b><br>Test class: com.Tests.Term<br>Test method: check inactive to active user<br>Parameters: public void com.Tests.Term.updatePassageTermStatusTrueVerify(java.lang.reflect.Method) throws java.lang.Throwable</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.updatePassageTermVerify()'><b>updatePassageTermVerify</b><br>Test class: com.Tests.Term<br>Test method: update passage term<br>Parameters: public void com.Tests.Term.updatePassageTermVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.updatePoolTermDuplicateValueVerify()'><b>updatePoolTermDuplicateValueVerify</b><br>Test class: com.Tests.Term<br>Test method: check duplicate data for update pool term<br>Parameters: public void com.Tests.Term.updatePoolTermDuplicateValueVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.updatePoolTermStatusFalseVerify()'><b>updatePoolTermStatusFalseVerify</b><br>Test class: com.Tests.Term<br>Test method:  check active to inactive user<br>Parameters: public void com.Tests.Term.updatePoolTermStatusFalseVerify(java.lang.reflect.Method) throws java.lang.Throwable</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.updatePoolTermStatusTrueVerify()'><b>updatePoolTermStatusTrueVerify</b><br>Test class: com.Tests.Term<br>Test method: check inactive to active user<br>Parameters: public void com.Tests.Term.updatePoolTermStatusTrueVerify(java.lang.reflect.Method) throws java.lang.Throwable</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+<tr>
+<td title='com.Tests.Term.updatePoolTermVerify()'><b>updatePoolTermVerify</b><br>Test class: com.Tests.Term<br>Test method: update pool term<br>Parameters: public void com.Tests.Term.updatePoolTermVerify(java.lang.reflect.Method) throws java.lang.InterruptedException,java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.Tests.Term@4455f57d</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "voyagesId": 4,
+  "excludesList": [
+    {
+      "sfpM_ExcludeReportId": 1,
+      "status": 1
+    },
+	{
+      "sfpM_ExcludeReportId": 2,
+      "status": 0
+    }
+  ]
+}

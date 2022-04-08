@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Haud]">
+  <parameter name="serviceType" value="null"/>
+  <parameter name="appURL" value="https://scorpioapiuat.azure-api.net/master"/>
+  <parameter name="tcID" value="testCaseName"/>
+  <listeners>
+    <listener class-name="com.Reporting.TestListener"/>
+    <listener class-name="com.Utilities.IAltersuite"/>
+  </listeners>
+  <test name="Voyages">
+    <parameter name="serviceType" value="null"/>
+    <parameter name="appURL" value="https://scorpioapiuat.azure-api.net/master"/>
+    <parameter name="tcID" value="testCaseName"/>
+    <classes>
+      <class name="com.Tests.Voyages">
+        <methods>
+          <include name="ApplicationID"/>
+          <include name="Create Method"/>
+          <include name="createVoyageVerify"/>
+          <include name="createVoyageBlankDataVerify"/>
+          <include name="updateVoyageVerify"/>
+          <include name="getVoyageByIdVerify"/>
+          <include name="updateVoyagesStatusTrueVerify"/>
+          <include name="updateVoyagesStatusFalseVerify"/>
+          <include name="isInitialApprovedVerify"/>
+          <include name="finalApproveVerify"/>
+          <include name="getAllVoyagesByVesselVerify"/>
+          <include name="getReportsForPassagesVerify"/>
+          <include name="approvalAuditListVerify"/>
+          <include name="createPositionVerify"/>
+          <include name="createPositionBlankDataVerify"/>
+          <include name="UpdatePositionVerify"/>
+          <include name="UpdatePositionStatusFalseVerify"/>
+          <include name="UpdatePositionStatusTrueVerify"/>
+          <include name="copyPositionVerify"/>
+        </methods>
+      </class> <!-- com.Tests.Voyages -->
+    </classes>
+  </test> <!-- Voyages -->
+  <test name="PositionWarning">
+    <parameter name="serviceType" value="null"/>
+    <parameter name="appURL" value="https://scorpioapiuat.azure-api.net/master"/>
+    <parameter name="tcID" value="testCaseName"/>
+    <classes>
+      <class name="com.Tests.PositionWarning">
+        <methods>
+          <include name="ApplicationID"/>
+          <include name="Create Method"/>
+          <include name="createVoyageVerify"/>
+          <include name="createVoyageBlankDataVerify"/>
+          <include name="updateVoyageVerify"/>
+          <include name="getVoyageByIdVerify"/>
+          <include name="updateVoyagesStatusTrueVerify"/>
+          <include name="updateVoyagesStatusFalseVerify"/>
+          <include name="isInitialApprovedVerify"/>
+          <include name="finalApproveVerify"/>
+          <include name="getAllVoyagesByVesselVerify"/>
+          <include name="getReportsForPassagesVerify"/>
+          <include name="approvalAuditListVerify"/>
+          <include name="createPositionVerify"/>
+          <include name="createPositionBlankDataVerify"/>
+          <include name="UpdatePositionVerify"/>
+          <include name="UpdatePositionStatusFalseVerify"/>
+          <include name="UpdatePositionStatusTrueVerify"/>
+          <include name="copyPositionVerify"/>
+        </methods>
+      </class> <!-- com.Tests.PositionWarning -->
+    </classes>
+  </test> <!-- PositionWarning -->
+  <test name="PassageWarning">
+    <parameter name="serviceType" value="null"/>
+    <parameter name="appURL" value="https://scorpioapiuat.azure-api.net/master"/>
+    <parameter name="tcID" value="testCaseName"/>
+    <classes>
+      <class name="com.Tests.PassageWarning">
+        <methods>
+          <include name="ApplicationID"/>
+          <include name="Create Method"/>
+          <include name="createPassageWarningAuditVerify"/>
+          <include name="createPassageWarningAuditBlankDataVerify"/>
+          <include name="getPassageWarningAuditVerify"/>
+          <include name="getPassageWarningVerify"/>
+        </methods>
+      </class> <!-- com.Tests.PassageWarning -->
+    </classes>
+  </test> <!-- PassageWarning -->
+  <test name="FluidConsumption">
+    <parameter name="serviceType" value="null"/>
+    <parameter name="appURL" value="https://scorpioapiuat.azure-api.net/master"/>
+    <parameter name="tcID" value="testCaseName"/>
+    <classes>
+      <class name="com.Tests.FluidConsumption">
+        <methods>
+          <include name="ApplicationID"/>
+          <include name="Create Method"/>
+          <include name="createPositionVerify"/>
+          <include name="createFluidConsumptionVerify"/>
+          <include name="createFluidConsumptionDuplicateDataVerify"/>
+          <include name="createFluidConsumptionBlankDataVerify"/>
+          <include name="getFluidConsumptionByIdVerify"/>
+          <include name="getAllFluidConsumptionVerify"/>
+          <include name="updateFluidConsumptionVerify"/>
+          <include name="updateFluidConsumptionDuplicateDataVerify"/>
+          <include name="deleteFluidConsumptionVerify"/>
+          <include name="createEventVerify"/>
+          <include name="createFluidEventVerify"/>
+          <include name="createFluidEventDuplicateDataVerify"/>
+          <include name="createFluidEventBlankDataVerify"/>
+          <include name="updateEventFluidConsumptionVerify"/>
+          <include name="getAllEventFluidConsumptionVerify"/>
+        </methods>
+      </class> <!-- com.Tests.FluidConsumption -->
+    </classes>
+  </test> <!-- FluidConsumption -->
+  <test name="Event">
+    <parameter name="serviceType" value="null"/>
+    <parameter name="appURL" value="https://scorpioapiuat.azure-api.net/master"/>
+    <parameter name="tcID" value="testCaseName"/>
+    <classes>
+      <class name="com.Tests.Event">
+        <methods>
+          <include name="ApplicationID"/>
+          <include name="Create Method"/>
+          <include name="createEventVerify"/>
+          <include name="createEventDuplicateDataVerify"/>
+          <include name="createEventBlankDataVerify"/>
+          <include name="updateEventVerify"/>
+          <include name="getEventByIdVerify"/>
+          <include name="getAllEventsVerify"/>
+        </methods>
+      </class> <!-- com.Tests.Event -->
+    </classes>
+  </test> <!-- Event -->
+  <test name="Voyages(failed)">
+    <parameter name="serviceType" value="null"/>
+    <parameter name="appURL" value="https://scorpioapiuat.azure-api.net/master"/>
+    <parameter name="tcID" value="testCaseName"/>
+    <classes>
+      <class name="com.Tests.PositionWarning">
+        <methods>
+          <include name="setClass"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+        </methods>
+      </class> <!-- com.Tests.PositionWarning -->
+      <class name="com.Tests.Voyages">
+        <methods>
+          <include name="updateVoyagesStatusFalseVerify" invocation-numbers="0"/>
+          <include name="getVoyageByIdVerify" invocation-numbers="0"/>
+          <include name="setClass"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+          <include name="isInitialApprovedVerify" invocation-numbers="0"/>
+          <include name="updateVoyageVerify" invocation-numbers="0"/>
+          <include name="finalApproveVerify" invocation-numbers="0"/>
+          <include name="updateVoyagesStatusTrueVerify" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.Tests.Voyages -->
+      <class name="com.Tests.FluidConsumption">
+        <methods>
+          <include name="setClass"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Tests.FluidConsumption -->
+      <class name="com.Tests.Event">
+        <methods>
+          <include name="setClass"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Tests.Event -->
+      <class name="com.Tests.PassageWarning">
+        <methods>
+          <include name="setClass"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Tests.PassageWarning -->
+    </classes>
+  </test> <!-- Voyages(failed) -->
+  <test name="PositionWarning(failed)">
+    <parameter name="serviceType" value="null"/>
+    <parameter name="appURL" value="https://scorpioapiuat.azure-api.net/master"/>
+    <parameter name="tcID" value="testCaseName"/>
+    <classes>
+      <class name="com.Tests.PositionWarning">
+        <methods>
+          <include name="createPositionWarningAuditBlankDataVerify" invocation-numbers="0"/>
+          <include name="createPositionWarningAuditVerify" invocation-numbers="0"/>
+          <include name="setClass"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+          <include name="getPositionWarningAuditVerify" invocation-numbers="0"/>
+          <include name="getViewOriginalEmailVerify" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.Tests.PositionWarning -->
+      <class name="com.Tests.Voyages">
+        <methods>
+          <include name="setClass"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Tests.Voyages -->
+      <class name="com.Tests.FluidConsumption">
+        <methods>
+          <include name="setClass"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Tests.FluidConsumption -->
+      <class name="com.Tests.Event">
+        <methods>
+          <include name="setClass"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Tests.Event -->
+      <class name="com.Tests.PassageWarning">
+        <methods>
+          <include name="setClass"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Tests.PassageWarning -->
+    </classes>
+  </test> <!-- PositionWarning(failed) -->
+  <test name="PassageWarning(failed)">
+    <parameter name="serviceType" value="null"/>
+    <parameter name="appURL" value="https://scorpioapiuat.azure-api.net/master"/>
+    <parameter name="tcID" value="testCaseName"/>
+    <classes>
+      <class name="com.Tests.PositionWarning">
+        <methods>
+          <include name="setClass"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+        </methods>
+      </class> <!-- com.Tests.PositionWarning -->
+      <class name="com.Tests.Voyages">
+        <methods>
+          <include name="setClass"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Tests.Voyages -->
+      <class name="com.Tests.FluidConsumption">
+        <methods>
+          <include name="setClass"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Tests.FluidConsumption -->
+      <class name="com.Tests.Event">
+        <methods>
+          <include name="setClass"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Tests.Event -->
+      <class name="com.Tests.PassageWarning">
+        <methods>
+          <include name="createPassageWarningAuditVerify" invocation-numbers="0"/>
+          <include name="setClass"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Tests.PassageWarning -->
+    </classes>
+  </test> <!-- PassageWarning(failed) -->
+  <test name="FluidConsumption(failed)">
+    <parameter name="serviceType" value="null"/>
+    <parameter name="appURL" value="https://scorpioapiuat.azure-api.net/master"/>
+    <parameter name="tcID" value="testCaseName"/>
+    <classes>
+      <class name="com.Tests.PositionWarning">
+        <methods>
+          <include name="setClass"/>
+          <include name="setUp"/>
+          <include name="getTestData"/>
+        </methods>
+      </class> <!-- com.Tests.PositionWarning -->
+      <class name="com.Tests.Voyages">
+        <methods>
+          <include name="setClass"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Tests.Voyages -->
+      <class name="com.Tests.FluidConsumption">
+        <methods>
+          <include name="setClass"/>
+          <include name="deleteFluidConsumptionVerify" invocation-numbers="0"/>
+          <include name="updateFluidConsumptionDuplicateDataVerify" invocation-numbers="0"/>
+          <include name="createFluidConsumptionDuplicateDataVerify" invocation-numbers="0"/>
+          <include name="updateFluidConsumptionVerify" invocation-numbers="0"/>
+          <include name="getTestData"/>
+          <include name="createFluidConsumptionVerify" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="getFluidConsumptionByIdVerify" invocation-numbers="0"/>
+          <include name="updateEventFluidConsumptionVerify" invocation-numbers="0"/>
+          <include name="createEventVerify" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.Tests.FluidConsumption -->
+      <class name="com.Tests.Event">
+        <methods>
+          <include name="setClass"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Tests.Event -->
+      <class name="com.Tests.PassageWarning">
+        <methods>
+          <include name="setClass"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Tests.PassageWarning -->
+    </classes>
+  </test> <!-- FluidConsumption(failed) -->
+</suite> <!-- Failed suite [Haud] -->

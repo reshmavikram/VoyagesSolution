@@ -1,0 +1,20 @@
+[
+    {
+        "sfpM_RobId": 70,
+        "fuelType": "LSMGO",
+        "start": null,
+        "remaining": null,
+        "auxEngineConsumption": null,
+        "boilerEngineConsumption": null,
+        "units": "fHhgzXHhfH",
+        "received": null,
+        "consumption": null,
+        "consOverWeatherThreshold": null,
+        "allocation": {
+            "sfpM_AllocationId": 47,
+            "name": "GpHFLzlPBl",
+            "text": "MMnsKrKQYV",
+            "robSFPM_RobId": 70
+        },
+        "robsSFPM_RobsId": 2
+    }]

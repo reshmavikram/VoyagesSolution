@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<Environment_Details>
+		<AppUrl>https://scorpioapiuat.azure-api.net/master</AppUrl>
+	</Environment_Details>	
+	<Execution_Details>
+		<Execution_Type>Single</Execution_Type><!-- Single/Multiple/Hybrid-XX -->	
+		<Regression_Suite_Name>Haud</Regression_Suite_Name>
+	</Execution_Details>
+	<timeout>10</timeout>
+</Root>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Haud" duration-ms="9693" started-at="2020-02-11T10:10:46Z" finished-at="2020-02-11T10:10:55Z">
+    <groups>
+    </groups>
+    <test name="Report" duration-ms="9693" started-at="2020-02-11T10:10:46Z" finished-at="2020-02-11T10:10:55Z">
+      <class name="com.Tests.Report">
+        <test-method status="PASS" signature="setClass()[pri:0, instance:com.Tests.Report@299321e2]" name="setClass" is-config="true" duration-ms="197" started-at="2020-02-11T10:10:46Z" finished-at="2020-02-11T10:10:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setClass -->
+        <test-method status="PASS" signature="getTestData(java.lang.reflect.Method)[pri:0, instance:com.Tests.Report@299321e2]" name="getTestData" is-config="true" duration-ms="118" started-at="2020-02-11T10:10:46Z" finished-at="2020-02-11T10:10:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Tests.Report.createVoyageVerify(java.lang.reflect.Method) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestData -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.Tests.Report@299321e2]" name="setUp" is-config="true" duration-ms="4" started-at="2020-02-11T10:10:46Z" finished-at="2020-02-11T10:10:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Tests.Report.createVoyageVerify(java.lang.reflect.Method) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createVoyageVerify(java.lang.reflect.Method)[pri:1, instance:com.Tests.Report@299321e2]" name="createVoyageVerify" duration-ms="9317" started-at="2020-02-11T10:10:46Z" description="create voyages" finished-at="2020-02-11T10:10:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Tests.Report.createVoyageVerify(java.lang.reflect.Method) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createVoyageVerify -->
+      </class> <!-- com.Tests.Report -->
+    </test> <!-- Report -->
+  </suite> <!-- Haud -->
+</testng-results>

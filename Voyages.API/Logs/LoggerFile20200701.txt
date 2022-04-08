@@ -1,0 +1,75 @@
+2020-07-01 11:56:11.559 +05:30 [INF] Starting...
+2020-07-01 17:48:01.381 +05:30 [INF] Starting...
+2020-07-01 18:55:30.208 +05:30 [INF] Starting...
+2020-07-01 19:42:21.567 +05:30 [ERR]    at VoyagesAPIService.Controllers.FleetViewController.getlatlongs(String latslongs)
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at VoyagesAPIService.Infrastructure.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context)
+2020-07-01 19:44:27.962 +05:30 [ERR]    at VoyagesAPIService.Controllers.FleetViewController.getlatlongs(String latslongs)
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at VoyagesAPIService.Infrastructure.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context)
+2020-07-01 20:06:59.116 +05:30 [INF] Starting...
+2020-07-01 20:08:01.411 +05:30 [FTL] Host terminated unexpectedly
+System.Net.Http.HttpRequestException: The requested name is valid, but no data of the requested type was found ---> System.Net.Sockets.SocketException: The requested name is valid, but no data of the requested type was found
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.Rest.RetryDelegatingHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.Azure.KeyVault.KeyVaultClient.GetSecretWithHttpMessagesAsync(String vaultBaseUrl, String secretName, String secretVersion, Dictionary`2 customHeaders, CancellationToken cancellationToken)
+   at Microsoft.Azure.KeyVault.KeyVaultClientExtensions.GetSecretAsync(IKeyVaultClient operations, String vaultBaseUrl, String secretName, CancellationToken cancellationToken)
+   at VoyagesAPIService.Infrastructure.Helper.AzureVaultKey.SetVaultValue() in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Helper\AzureVaultKey.cs:line 69
+   at VoyagesAPIService.Startup.ConfigureServices(IServiceCollection services) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Startup.cs:line 94
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.ConfigureServices(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.EnsureApplicationServices()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.Initialize()
+   at Microsoft.AspNetCore.Hosting.WebHostBuilder.Build()
+   at VoyagesAPIService.Program.Main(String[] args) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Program.cs:line 23
+2020-07-01 20:08:07.509 +05:30 [INF] Starting...
+2020-07-01 20:08:36.847 +05:30 [FTL] Host terminated unexpectedly
+System.Net.Http.HttpRequestException: No such host is known ---> System.Net.Sockets.SocketException: No such host is known
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.Rest.RetryDelegatingHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.Azure.KeyVault.KeyVaultCredential.ProcessHttpRequestAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Azure.KeyVault.KeyVaultClient.GetSecretWithHttpMessagesAsync(String vaultBaseUrl, String secretName, String secretVersion, Dictionary`2 customHeaders, CancellationToken cancellationToken)
+   at Microsoft.Azure.KeyVault.KeyVaultClientExtensions.GetSecretAsync(IKeyVaultClient operations, String vaultBaseUrl, String secretName, CancellationToken cancellationToken)
+   at VoyagesAPIService.Infrastructure.Helper.AzureVaultKey.SetVaultValue() in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Helper\AzureVaultKey.cs:line 52
+   at VoyagesAPIService.Startup.ConfigureServices(IServiceCollection services) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Startup.cs:line 94
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.ConfigureServices(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.EnsureApplicationServices()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.Initialize()
+   at Microsoft.AspNetCore.Hosting.WebHostBuilder.Build()
+   at VoyagesAPIService.Program.Main(String[] args) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Program.cs:line 23
+2020-07-01 20:08:46.221 +05:30 [INF] Starting...
+2020-07-01 20:53:41.723 +05:30 [INF] Starting...
+2020-07-01 22:12:01.742 +05:30 [INF] Starting...

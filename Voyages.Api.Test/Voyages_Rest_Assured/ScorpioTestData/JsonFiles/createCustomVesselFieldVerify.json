@@ -1,0 +1,11 @@
+{
+    "SFPM_CustomVesselFieldId": 7,
+    "FieldName": "CustomFiled6",
+    "VesselType": null,
+    "VesselTypeId": 1,
+    "Status": "ACTIVE",
+    "CreatedBy": null,
+    "CreatedDateTime": "2019-12-12T06:03:13.9731169+00:00",
+    "ModifiedBy": null,
+    "ModifiedDateTime": "2019-12-12T06:03:13.9731642+00:00"
+}

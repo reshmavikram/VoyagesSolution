@@ -1,0 +1,106 @@
+{
+    "sfpM_PassageTermsId": 382,
+    "termsTitle": "PassadddageTermdevlive1-Copy-Copy",
+    "termsTypeList": [
+        {
+            "sfpM_TermsTypeId": 3,
+            "termsTypeName": "Enviro / Tech Terms",
+            "status": "ACTIVE"
+        }
+    ],
+    "speedList": null,
+    "fuelUnitList": null,
+    "draftLimitList": null,
+    "evaluationTypeList": null,
+    "weatherSourceList": null,
+    "currentFactorList": null,
+    "vesselList": null,
+    "vesselGroupList": null,
+    "vesselClassList": null,
+    "passageTermVesselList": [
+        {
+            "sfpM_PassageTermVesselMappingId": 967,
+            "passageTermsId": 382,
+            "vesselId": 2
+        },
+        {
+            "sfpM_PassageTermVesselMappingId": 968,
+            "passageTermsId": 382,
+            "vesselId": 3
+        }
+    ],
+    "vesselTypeId": 2,
+    "passageTermsConsumptionCategoryMappingList": [
+        {
+            "sfpM_PassageTermsConsumptionCategoryMappingId": 1045,
+            "passageTermsId": 382,
+            "parentConsumptionCategoryId": 1,
+            "childConsumptionCategoryId": 1,
+            "fuelTypeId": 1
+        }
+    ],
+    "passageTermPerformanceList": [
+        {
+            "sfpM_PassageTermPerformanceId": 559,
+            "description": "string",
+            "speed": 0.00,
+            "draft": "string",
+            "loadConditionId": 0,
+            "isAboutClause": true,
+            "speedAdjustmentLower": 0.00,
+            "speedAdjustmentUpper": 0.00,
+            "fuleAdjustmentLower": 0.00,
+            "fuleAdjustmentUpper": 0.00,
+            "status": 0,
+            "passagePerformanceConsumptionCategoryMappingList": [
+                {
+                    "sfpM_PassagePerformanceConsumptionCategoryMappingId": 1233,
+                    "consumptionCategoryId": 1,
+                    "consumptionCategoryValue": 12.00,
+                    "passageTermPerformanceSFPM_PassageTermPerformanceId": 559,
+                    "passageTerms": 0
+                },
+                {
+                    "sfpM_PassagePerformanceConsumptionCategoryMappingId": 1234,
+                    "consumptionCategoryId": 1,
+                    "consumptionCategoryValue": 4.00,
+                    "passageTermPerformanceSFPM_PassageTermPerformanceId": 559,
+                    "passageTerms": 0
+                }
+            ],
+            "passageTermsSFPM_PassageTermsId": 382,
+            "createdBy": 0,
+            "createdDateTime": "0001-01-01T00:00:00",
+            "modifiedBy": 0,
+            "modifiedDateTime": "0001-01-01T00:00:00"
+        }
+    ],
+    "termsTypeId": 3,
+    "speedId": 1,
+    "fuelUnitId": 1,
+    "fwdDraftLimit": 0.00,
+    "aftDraftLimit": 0.00,
+    "avgDraftLimit": 0.00,
+    "evaluationTypeId": 1,
+    "weatherSourceId": 1,
+    "currentFactorId": 1,
+    "windSpeedId": 1,
+    "windSpeed": 1.20,
+    "waveHeightId": 1,
+    "waveHeight": 20.00,
+    "minDayHours": 6.00,
+    "adverseCurrentLimit": 12.00,
+    "passageHourId": 1,
+    "minPassageHours": 2.00,
+    "badDayHoursId": 1,
+    "badDayHours": 5.00,
+    "timeLostId": 1,
+    "timeGainedId": 1,
+    "fuelOverConsumed": 1,
+    "fuelOverConsumedSpeedConsidered": 1,
+    "fuelUnderConsumed": 1,
+    "fuelunderConsumedSpeedConsidered": 1,
+    "status": "ACTIVE",
+    "createdDateTime": "2019-12-23T12:41:45.5442493Z",
+    "modifiedDateTime": "2019-12-23T12:41:45.5442493Z"
+}

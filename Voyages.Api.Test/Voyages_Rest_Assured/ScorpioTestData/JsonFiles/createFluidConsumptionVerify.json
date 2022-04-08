@@ -1,0 +1,14 @@
+{
+    "noonReportId": 371,
+    "robId": 22,
+    "eventROBsRowId": 0,
+    "fluidType": "Fluid",
+    "unit": "Fluid",
+    "category": "Test",
+    "consumption": "FE",
+    "lsmgo": null,
+    "allocationsLSMGO": null,
+    "hsifo": null,
+    "allocationsHSIFO": null,
+    "allocationId": 0
+}

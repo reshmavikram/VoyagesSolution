@@ -1,0 +1,26 @@
+# Created at 2020-02-10T19:46:00.098
+org.testng.TestNGException: 
+Cannot find class in classpath: com.Tests.1
+	at org.testng.xml.XmlClass.loadClass(XmlClass.java:81)
+	at org.testng.xml.XmlClass.getSupportClass(XmlClass.java:89)
+	at org.testng.internal.XmlMethodSelector.setXmlClasses(XmlMethodSelector.java:253)
+	at org.testng.TestRunner.initRunInfo(TestRunner.java:393)
+	at org.testng.TestRunner.init(TestRunner.java:242)
+	at org.testng.TestRunner.init(TestRunner.java:217)
+	at org.testng.TestRunner.<init>(TestRunner.java:161)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:556)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:168)
+	at org.testng.SuiteRunner.<init>(SuiteRunner.java:117)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1319)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1306)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1160)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+

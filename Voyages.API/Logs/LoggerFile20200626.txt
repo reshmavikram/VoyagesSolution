@@ -1,0 +1,112 @@
+2020-06-26 18:11:38.961 +05:30 [INF] Starting...
+2020-06-26 18:57:37.448 +05:30 [INF] Starting...
+2020-06-26 19:05:51.240 +05:30 [INF] Starting...
+2020-06-26 19:09:25.127 +05:30 [ERR]    at OfficeOpenXml.Packaging.ZipPackage..ctor(Stream stream)
+   at OfficeOpenXml.ExcelPackage.Load(Stream input, Stream output, String Password)
+   at OfficeOpenXml.ExcelPackage..ctor(Stream newStream)
+   at VoyagesAPIService.Infrastructure.Repositories.VoyagesRepository.ImportVesselListExcel() in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Repositories\VoyagesRepository.cs:line 3292
+   at VoyagesAPIService.Infrastructure.Services.VoyagesService.ImportVesselListExcel() in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Services\VoyagesService.cs:line 321
+   at VoyagesAPIService.Controllers.VoyagesController.ImportVesselListExcel() in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Controllers\VoyagesController.cs:line 1542
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at VoyagesAPIService.Infrastructure.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Middlewares\ErrorHandlerMiddleware.cs:line 25
+2020-06-26 19:15:34.276 +05:30 [INF] Starting...
+2020-06-26 19:23:09.781 +05:30 [ERR]    at OfficeOpenXml.Packaging.ZipPackage..ctor(Stream stream)
+   at OfficeOpenXml.ExcelPackage.Load(Stream input, Stream output, String Password)
+   at OfficeOpenXml.ExcelPackage..ctor(Stream newStream)
+   at VoyagesAPIService.Infrastructure.Repositories.VoyagesRepository.ImportVesselListExcel() in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Repositories\VoyagesRepository.cs:line 3292
+   at VoyagesAPIService.Infrastructure.Services.VoyagesService.ImportVesselListExcel() in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Services\VoyagesService.cs:line 321
+   at VoyagesAPIService.Controllers.VoyagesController.ImportVesselListExcel() in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Controllers\VoyagesController.cs:line 1542
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at VoyagesAPIService.Infrastructure.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Middlewares\ErrorHandlerMiddleware.cs:line 25
+2020-06-26 20:46:48.936 +05:30 [INF] Starting...
+2020-06-26 20:49:51.252 +05:30 [ERR]    at VoyagesAPIService.Infrastructure.Repositories.VoyagesRepository.SetTimezoneFormate(String timeZone) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Repositories\VoyagesRepository.cs:line 1771
+   at VoyagesAPIService.Infrastructure.Repositories.VoyagesRepository.CreatePosition(Forms forms) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Repositories\VoyagesRepository.cs:line 391
+   at VoyagesAPIService.Infrastructure.Services.VoyagesService.CreatePosition(Forms forms) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Services\VoyagesService.cs:line 101
+   at VoyagesAPIService.Controllers.VoyagesController.CreatePosition(Forms formData) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Controllers\VoyagesController.cs:line 524
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at VoyagesAPIService.Infrastructure.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Middlewares\ErrorHandlerMiddleware.cs:line 25
+2020-06-26 20:50:13.611 +05:30 [ERR]    at VoyagesAPIService.Infrastructure.Repositories.VoyagesRepository.SetTimezoneFormate(String timeZone) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Repositories\VoyagesRepository.cs:line 1771
+   at VoyagesAPIService.Infrastructure.Repositories.VoyagesRepository.CreatePosition(Forms forms) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Repositories\VoyagesRepository.cs:line 391
+   at VoyagesAPIService.Infrastructure.Services.VoyagesService.CreatePosition(Forms forms) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Services\VoyagesService.cs:line 101
+   at VoyagesAPIService.Controllers.VoyagesController.CreatePosition(Forms formData) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Controllers\VoyagesController.cs:line 524
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at VoyagesAPIService.Infrastructure.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Middlewares\ErrorHandlerMiddleware.cs:line 25
+2020-06-26 20:56:57.216 +05:30 [ERR]    at VoyagesAPIService.Infrastructure.Repositories.VoyagesRepository.ConvertDegreeAngleToDouble(String point) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Repositories\VoyagesRepository.cs:line 1823
+   at VoyagesAPIService.Infrastructure.Repositories.VoyagesRepository.CreatePositionWarning(Forms forms) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Repositories\VoyagesRepository.cs:line 1740
+   at VoyagesAPIService.Infrastructure.Repositories.VoyagesRepository.CreatePosition(Forms forms) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Repositories\VoyagesRepository.cs:line 445
+   at VoyagesAPIService.Infrastructure.Services.VoyagesService.CreatePosition(Forms forms) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Services\VoyagesService.cs:line 101
+   at VoyagesAPIService.Controllers.VoyagesController.CreatePosition(Forms formData) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Controllers\VoyagesController.cs:line 524
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at VoyagesAPIService.Infrastructure.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\user\Documents\Scorpio project\Voyage.API\Voyages.API\Infrastructure\Middlewares\ErrorHandlerMiddleware.cs:line 25
+2020-06-26 21:01:52.270 +05:30 [INF] Starting...
+2020-06-26 21:19:12.942 +05:30 [INF] Starting...

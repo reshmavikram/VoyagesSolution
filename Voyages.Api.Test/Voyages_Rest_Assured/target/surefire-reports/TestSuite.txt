@@ -1,0 +1,86 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 46, Failures: 19, Errors: 0, Skipped: 0, Time elapsed: 54.208 s <<< FAILURE! - in TestSuite
+updateVoyageVerify(com.Tests.Voyages)  Time elapsed: 1.478 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [400]
+	at com.Tests.Voyages.updateVoyageVerify(Voyages.java:74)
+
+getVoyageByIdVerify(com.Tests.Voyages)  Time elapsed: 0.866 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [409]
+	at com.Tests.Voyages.getVoyageByIdVerify(Voyages.java:84)
+
+updateVoyagesStatusFalseVerify(com.Tests.Voyages)  Time elapsed: 0.843 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [400]
+	at com.Tests.Voyages.updateVoyagesStatusFalseVerify(Voyages.java:97)
+
+updateVoyagesStatusTrueVerify(com.Tests.Voyages)  Time elapsed: 0.84 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [400]
+	at com.Tests.Voyages.updateVoyagesStatusTrueVerify(Voyages.java:106)
+
+isInitialApprovedVerify(com.Tests.Voyages)  Time elapsed: 0.86 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [400]
+	at com.Tests.Voyages.isInitialApprovedVerify(Voyages.java:116)
+
+finalApproveVerify(com.Tests.Voyages)  Time elapsed: 0.823 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [400]
+	at com.Tests.Voyages.finalApproveVerify(Voyages.java:125)
+
+createPositionWarningAuditVerify(com.Tests.PositionWarning)  Time elapsed: 0.013 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at com.Tests.PositionWarning.createPositionWarningAuditVerify(PositionWarning.java:45)
+
+createPositionWarningAuditBlankDataVerify(com.Tests.PositionWarning)  Time elapsed: 0.012 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at com.Tests.PositionWarning.createPositionWarningAuditBlankDataVerify(PositionWarning.java:57)
+
+getPositionWarningAuditVerify(com.Tests.PositionWarning)  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at com.Tests.PositionWarning.getPositionWarningAuditVerify(PositionWarning.java:66)
+
+getViewOriginalEmailVerify(com.Tests.PositionWarning)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at com.Tests.PositionWarning.getViewOriginalEmailVerify(PositionWarning.java:78)
+
+createPassageWarningAuditVerify(com.Tests.PassageWarning)  Time elapsed: 0.899 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [400]
+	at com.Tests.PassageWarning.createPassageWarningAuditVerify(PassageWarning.java:45)
+
+createFluidConsumptionDuplicateDataVerify(com.Tests.FluidConsumption)  Time elapsed: 0.825 s  <<< FAILURE!
+java.lang.AssertionError: expected [409] but found [400]
+	at com.Tests.FluidConsumption.createFluidConsumptionDuplicateDataVerify(FluidConsumption.java:75)
+
+createFluidConsumptionVerify(com.Tests.FluidConsumption)  Time elapsed: 0.82 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [400]
+	at com.Tests.FluidConsumption.createFluidConsumptionVerify(FluidConsumption.java:59)
+
+getFluidConsumptionByIdVerify(com.Tests.FluidConsumption)  Time elapsed: 0.948 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [400]
+	at com.Tests.FluidConsumption.getFluidConsumptionByIdVerify(FluidConsumption.java:94)
+
+updateFluidConsumptionVerify(com.Tests.FluidConsumption)  Time elapsed: 0.826 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [400]
+	at com.Tests.FluidConsumption.updateFluidConsumptionVerify(FluidConsumption.java:119)
+
+updateFluidConsumptionDuplicateDataVerify(com.Tests.FluidConsumption)  Time elapsed: 0.863 s  <<< FAILURE!
+java.lang.AssertionError: expected [409] but found [400]
+	at com.Tests.FluidConsumption.updateFluidConsumptionDuplicateDataVerify(FluidConsumption.java:129)
+
+createEventVerify(com.Tests.FluidConsumption)  Time elapsed: 0.898 s  <<< FAILURE!
+java.lang.IllegalArgumentException: 
+No signature of method: java.lang.Integer.getAt() is applicable for argument types: (java.lang.Integer) values: [0]
+Possible solutions: getAt(java.lang.String), next(), putAt(java.lang.String, java.lang.Object), wait(), grep(), getClass()
+	at com.Tests.FluidConsumption.createEventVerify(FluidConsumption.java:151)
+Caused by: groovy.lang.MissingMethodException: 
+No signature of method: java.lang.Integer.getAt() is applicable for argument types: (java.lang.Integer) values: [0]
+Possible solutions: getAt(java.lang.String), next(), putAt(java.lang.String, java.lang.Object), wait(), grep(), getClass()
+	at com.Tests.FluidConsumption.createEventVerify(FluidConsumption.java:151)
+
+deleteFluidConsumptionVerify(com.Tests.FluidConsumption)  Time elapsed: 0.814 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [400]
+	at com.Tests.FluidConsumption.deleteFluidConsumptionVerify(FluidConsumption.java:139)
+
+updateEventFluidConsumptionVerify(com.Tests.FluidConsumption)  Time elapsed: 0.847 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [409]
+	at com.Tests.FluidConsumption.updateEventFluidConsumptionVerify(FluidConsumption.java:193)
+

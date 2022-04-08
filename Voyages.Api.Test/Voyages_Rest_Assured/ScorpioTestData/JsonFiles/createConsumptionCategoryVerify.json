@@ -1,0 +1,15 @@
+{
+    "sfpM_ConsumptionCategoryId": 100,
+    "name": "cscvv",
+    "description": "fd",
+    "isMainPropulsionEngine": true,
+    "alias": null,
+    "engineCategoryId": 6,
+    "isActive": false,
+    "createdBy": 0,
+    "createdDateTime": "2019-12-10T06:22:09.2315055+00:00",
+    "modifiedBy": 0,
+    "modifiedDateTime": "2019-12-10T06:22:09.2315065+00:00",
+    "status": "ACTIVE",
+    "isFixed": false
+}

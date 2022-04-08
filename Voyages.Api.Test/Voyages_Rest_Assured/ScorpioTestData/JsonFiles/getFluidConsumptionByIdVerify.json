@@ -1,0 +1,19 @@
+{
+    "sfpM_RobId": 55,
+    "fuelType": "testfluidsq",
+    "start": null,
+    "remaining": null,
+    "auxEngineConsumption": null,
+    "boilerEngineConsumption": null,
+    "units": "testfluidsq",
+    "received": null,
+    "consumption": null,
+    "consOverWeatherThreshold": null,
+    "allocation": {
+        "sfpM_AllocationId": 42,
+        "name": "testfluid1",
+        "text": "testfluid1",
+        "robSFPM_RobId": 55
+    },
+    "robsSFPM_RobsId": 3
+}

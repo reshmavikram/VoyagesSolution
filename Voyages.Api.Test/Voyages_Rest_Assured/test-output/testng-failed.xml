@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="8" name="Failed suite [Haud]">
+  <listeners>
+    <listener class-name="com.Reporting.TestListener"/>
+    <listener class-name="com.Utilities.IAltersuite"/>
+  </listeners>
+  <test thread-count="5" verbose="8" name="FluidConsumption(failed)">
+    <parameter name="serviceType" value="null"/>
+    <parameter name="appURL" value="https://scorpioapiuat.azure-api.net/master"/>
+    <parameter name="tcID" value="testCaseName"/>
+    <classes>
+      <class name="com.Tests.FluidConsumption">
+        <methods>
+          <include name="setClass"/>
+          <include name="updateFluidConsumptionDuplicateDataVerify" invocation-numbers="0"/>
+          <include name="createFluidConsumptionDuplicateDataVerify" invocation-numbers="0"/>
+          <include name="getTestData"/>
+          <include name="setUp"/>
+          <include name="updateEventFluidConsumptionVerify" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.Tests.FluidConsumption -->
+    </classes>
+  </test> <!-- FluidConsumption(failed) -->
+</suite> <!-- Failed suite [Haud] -->
