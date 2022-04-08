@@ -57,8 +57,8 @@ namespace VoyagesAPIService.Infrastructure.Helper
             KeyVaultClient client = new KeyVaultClient(new KeyVaultClient.AuthenticationCallback(GetAccessToken));
             var vaultAddress = section["vaultAddress"].ToString();
             //DESKTOP-ETL7FE4\\SQLEXPRESS
-            DbServer = "DESKTOP-ATHA8AK\\SQLEXPRESS";
-            //VPS_DB_New_Logic  DESKTOP-ATHA8AK\SQLEXPRESS
+            DbServer = "localhost\\SQLEXPRESS";
+            //VPS_DB_New_Logic  localhost\SQLEXPRESS
             DbSchema = "VPS_DB_New_Logic";
             DbUser = "sa";
             DbPass = "p@ssw0rd";

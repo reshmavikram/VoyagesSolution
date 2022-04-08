@@ -41,7 +41,7 @@ namespace VoyagesAPIService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DatabaseContext>(opts => opts.UseSqlServer("Data Source=DESKTOP-ATHA8AK\\SQLEXPRESS;Initial Catalog=VPS_DB_New_Logic;Integrated Security=True", m => m.MigrationsAssembly("Masters.API")));
+            services.AddDbContext<DatabaseContext>(opts => opts.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog=VPS_DB_New_Logic;Integrated Security=True", m => m.MigrationsAssembly("Masters.API")));
             services.AddApplicationInsightsTelemetry();
             _logger.LogInformation("Logging from ConfigureServices.");
 
