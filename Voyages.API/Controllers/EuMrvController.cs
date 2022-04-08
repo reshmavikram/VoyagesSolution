@@ -50,16 +50,14 @@ namespace VoyagesAPIService.Controllers
              IEnumerable<Vessel> allVesselList=_voyagesservice.GetAllVesselsByYear();
              List<EUMRDataViewModel> vesselViewModelList = new List<EUMRDataViewModel>();
              if (allVesselList != null)
-             { 
-             foreach (Vessel vesselObj in allVesselList)
-                 {
-                     EUMRDataViewModel objViewModel = new EUMRDataViewModel();
-                     objViewModel.VesselName = vesselObj.VesselName;
-                     objViewModel.IMONumber = vesselObj.IMONumber;
+             {
+                foreach (Vessel vesselObj in allVesselList)
+                {
+                    EUMRDataViewModel objViewModel = new EUMRDataViewModel();
+                    objViewModel.VesselName = vesselObj.VesselName;
+                    objViewModel.IMONumber = vesselObj.IMONumber;
                     vesselViewModelList.Add(objViewModel);
                 }
-
-
              }
 
              return Ok(vesselViewModelList);   
