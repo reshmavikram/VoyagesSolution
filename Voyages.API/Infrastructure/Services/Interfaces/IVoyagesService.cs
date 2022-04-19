@@ -8,8 +8,9 @@ namespace VoyagesAPIService.Infrastructure.Services.Interfaces
 {
     public interface IVoyagesService
     {
+  
         //Voyage
-        IEnumerable<Vessel> GetAllVesselsByYear();
+
         int CreateVoyages(Voyages voyages);
         int UpdateVoyages(Voyages voyages,long loginUserId);
         Voyages GetVoyage(long voyagesId,long loginUserId);

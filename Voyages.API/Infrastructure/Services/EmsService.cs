@@ -8,43 +8,26 @@ namespace VoyagesAPIService.Infrastructure.Services
 {
     public class EmsService : IEmsService
     {
-        protected EmsRepository _voyagesrepository;
-   /*     public VoyagesService(DatabaseContext databaseContext, UserContext context)
-        {
-            _voyagesrepository = new VoyagesRepository(databaseContext, context);
-        }*/
+        protected EmsRepository _emsrepository;
+   
         public EmsService(DatabaseContext databaseContext, UserContext context)
         {
-            _voyagesrepository = new EmsRepository(databaseContext, context);
+            _emsrepository = new EmsRepository(databaseContext, context);
         }
 
-        public IEnumerable<Voyages> GetAllVoyagesByVessel(string imoNumber, long userId)
+
+        public IEnumerable<Voyages> GetAllVoyagesByVesselAndYear(string imoNumber, long userId, string year)
         {
-            return _voyagesrepository.GetAllVoyagesByVessel(imoNumber, userId);
-        }
-        public PassagesApprovalAudits GetLatestPassagesApprovalAudit(long voyagesId)
-        {
-            return _voyagesrepository.GetLatestPassagesApprovalAudit(voyagesId);
+            return _emsrepository.GetAllVoyagesByVesselAndYear(imoNumber, userId, year);
         }
 
-        public PageSettings GetPageSettings(long userId)
+        public IEnumerable<Forms> GetAllVesselsByYear()
         {
-            return _voyagesrepository.GetPageSettings(userId);
+            return _emsrepository.GetAllVesselsByYear();
         }
 
-        public IEnumerable<ExcludeReportLogs> GetPassageReportExclusionlog(long voyageId, long loginUserId)
-        {
-            return _voyagesrepository.GetPassageReportExclusionlog(voyageId, loginUserId);
-        }
 
-        public IEnumerable<PassageWarning> GetPassageWarning(long voyageId, long loginUserId)
-        {
-            return _voyagesrepository.GetPassageWarning(voyageId, loginUserId);
-        }
 
-        public IEnumerable<PassageWarningAudit> GetPassageWarningAudit(long PassageWarningId)
-        {
-            return _voyagesrepository.GetPassageWarningAudit(PassageWarningId);
-        }
+
     }
 }

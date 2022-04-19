@@ -62,10 +62,7 @@ namespace VoyagesAPIService.Infrastructure.Repositories
             else
                 return null;
         }
-        public IEnumerable<Vessel> GetAllVesselsByYear()
-        {
-            return _DbContext.Vessels.ToList();
-        }
+        
             public IEnumerable<Voyages> GetAllVoyagesByVessel(string imoNumber, long userId)
         {
             var userrole = _DbContext.Roles.Where(x => x.RoleId == (_DbContext.UserRoleMapping.Where(y => y.UserId == Convert.ToInt64(this._currentUser.UserId)).Select(y => y.RoleId).FirstOrDefault())).Select(x => x.RoleName).AsNoTracking().FirstOrDefault();

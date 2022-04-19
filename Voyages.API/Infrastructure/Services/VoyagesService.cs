@@ -20,7 +20,7 @@ namespace VoyagesAPIService.Infrastructure.Services
         {
             _voyagesrepository = new VoyagesRepository(databaseContext, context);
         }
-
+        
         #region Passages / Voyages
 
         public Voyages GetVoyage(long voyagepassageId,long loginUserId)
@@ -28,10 +28,7 @@ namespace VoyagesAPIService.Infrastructure.Services
             return _voyagesrepository.GetVoyage(voyagepassageId, loginUserId);
         }
         
-        public IEnumerable<Vessel> GetAllVesselsByYear()
-        {
-            return _voyagesrepository.GetAllVesselsByYear();
-        }
+      
         public IEnumerable<Voyages> GetAllVoyagesByVessel(string imoNumber, long userId)
         {
             return _voyagesrepository.GetAllVoyagesByVessel(imoNumber, userId);

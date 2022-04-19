@@ -119,6 +119,9 @@ namespace VoyagesAPIService
 
             services.AddTransient<IVoyagesService, VoyagesService>();
             services.AddTransient<IFleetViewService, FleetViewServices>();
+
+            services.AddTransient<IEmsService, EmsService>();
+
             services.AddScoped<AuthServer>();
             services.AddScoped<UserContext>(f =>
             {

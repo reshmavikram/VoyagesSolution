@@ -1,77 +1,62 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using VoyagesAPIService.Infrastructure.Services.Interfaces;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Data.Solution.Models;
+﻿using Data.Solution.Models;
 using Data.Solution.Models.ViewModels;
 using Data.Solution.Resources;
-
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.IO;
-using OfficeOpenXml;
-using OfficeOpenXml.Style;
-using System.Drawing;
-using System.Threading.Tasks;
-using VoyagesAPIService.Helper;
-using Microsoft.AspNetCore.Authorization;
-using VoyagesAPIService.Filter;
-using System.Web;
-using VoyagesAPIService.Infrastructure.Helper;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
+using System.Net;
+using VoyagesAPIService.Infrastructure.Services.Interfaces;
 
 namespace VoyagesAPIService.Controllers
 {
-    // add auth here at last
-
     [Route("api/[controller]")]
 
-    public class EuMrvController : Controller
+
+    public class ImoDcsController : Controller
     {
-      private readonly IEmsService _emsservice;
-      
+        private readonly IEmsService _emsservice;
+
         private readonly IHostingEnvironment _hostingEnvironment;
         public IConfiguration Configuration { get; }
-        public EuMrvController(IEmsService emsService, IHostingEnvironment hostingEnvironment,IConfiguration configuration)
+        public ImoDcsController(IEmsService emsService, IHostingEnvironment hostingEnvironment, IConfiguration configuration)
         {
             _emsservice = emsService;
-          
-            _hostingEnvironment=hostingEnvironment; 
+
+            _hostingEnvironment = hostingEnvironment;
             Configuration = configuration;
-   
+
         }
-   /*   [HttpGet, Route("getAllVesselByReportingYear")]
+        [HttpGet, Route("getAllIMOVesselByReportingYear")]
         public IActionResult getAllVesselByReportingYear()
         {
-             IEnumerable<Forms> allVesselList= _emsservice.GetAllVesselsByYear();
-             List<EUMRDataViewModel> vesselViewModelList = new List<EUMRDataViewModel>();
-             if (allVesselList != null)
-             {
+            IEnumerable<Forms> allVesselList = _emsservice.GetAllVesselsByYear();
+            List<ImoDcsDataViewModel> vesselViewModelList = new List<ImoDcsDataViewModel>();
+            if (allVesselList != null)
+            {
                 foreach (Forms vesselObj in allVesselList)
                 {
-                    EUMRDataViewModel objViewModel = new EUMRDataViewModel();
-                    objViewModel.VesselName = vesselObj.VesselName;
-                    //objViewModel.IMONumber = vesselObj.ImoNumber;
-                   // objViewModel.ArrivalPort
-                   
+                    ImoDcsDataViewModel objViewModel = new ImoDcsDataViewModel();
+                    objViewModel.Description = vesselObj.VesselName;
+                    objViewModel.ImoNumber = (int)vesselObj.ImoNumber;
+
+                    // objViewModel.ArrivalPort
+
                     vesselViewModelList.Add(objViewModel);
                 }
-             }
+            }
 
-             return Ok(vesselViewModelList);   
-           
+            return Ok(vesselViewModelList);
+
 
         }
-       */
 
-        [HttpGet,Route("getAllVoyagesByVessel")]
+
+        [HttpGet, Route("getAllIMOVoyagesByVessel")]
         public IActionResult getAllVoyagesByVessel(string imoNumber, long userId, string year)
         {
-            IEnumerable<Voyages> allVoyageList = _emsservice.GetAllVoyagesByVesselAndYear(imoNumber, userId, year );
+            IEnumerable<Voyages> allVoyageList = _emsservice.GetAllVoyagesByVesselAndYear(imoNumber, userId, year);
             List<VoyagesViewModel> voyagesViewModelList = new List<VoyagesViewModel>();
             if (allVoyageList != null)
             {
@@ -94,9 +79,9 @@ namespace VoyagesAPIService.Controllers
                     objViewModel.IMONumber = voyageObj.IMONumber;
                     objViewModel.VesselCode = voyageObj.VesselCode;
                     objViewModel.VoyageNumber = voyageObj.VoyageNumber;
-                    
-                    
-                   
+
+
+
                     voyagesViewModelList.Add(objViewModel);
                 }
                 Response.Headers.Add("Status", HttpStatusCode.OK.ToString());
@@ -111,7 +96,13 @@ namespace VoyagesAPIService.Controllers
 
         }
 
-       
 
-        }
+
+    }
+
+
+
+
+
 }
+
